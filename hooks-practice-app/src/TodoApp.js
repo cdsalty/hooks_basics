@@ -57,5 +57,8 @@ export default TodoApp
 
 
 /*
+Inside TodoApp.js, in the todoForm, I am passing the functionality for adding a todo
+Inside TodoApp.js, in the TodoList, I will pass the todos (the state) ---> INside the todoList, I will map through and pass a todoItem
+
 Will control the state of all the todos; It will render a 1) TODO Form & 2) TODO List(each item in the todo list will be a TODOItem)
 */
