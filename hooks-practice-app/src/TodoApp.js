@@ -13,8 +13,8 @@ const TodoApp = () => {
 
   const initialTodos = [
     { id: 1, task: "Feed Daisy", completed: false },
-    { id: 2, task: "Take Out Trash", completed: true },
-    { id: 3, task: "Make Breakfast", completed: false }
+    { id: 2, task: "Take Out Trash", completed: false },
+    { id: 3, task: "Make Breakfast", completed: true }
   ];
 
   const [todos, setTodos] = useState(initialTodos);
@@ -34,13 +34,14 @@ const TodoApp = () => {
         margin: 0,
         height: "100vh",
         backgroundColor: "#fafafa"
+        // backgroundColor: "lemonchiffon"
         // backgroundColor: "red"
       } }
       elevation={ 0 }
     >
       <AppBar color='primary' position='static' style={ { height: "64px" } }>
         <Toolbar>
-          <Typography color='inherit'>Todos with HOOKS!</Typography>
+          <Typography class="title-name" color='inherit' style={ { padding: "50px" } }>Todos with HOOKS!</Typography>
         </Toolbar>
       </AppBar>
       <Grid container justify="center" style={ { marginTop: "20px" } }>
